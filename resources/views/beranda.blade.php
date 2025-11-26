@@ -30,10 +30,12 @@
                 </div>
                 <input type="text" 
                     class="block w-full pl-10 pr-3 py-3 border border-black rounded-full leading-5 bg-[#EBEBEB] placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-0 transition duration-150 ease-in-out sm:text-sm" 
-                    placeholder="Cari..." disabled> </div>
+                    placeholder="Cari..." disabled> 
+            </div>
         </div>
 
-        <div class="px-6 flex-1 pb-32"> <h2 class="text-lg font-medium text-black mb-4">Rekomendasi</h2>
+        <div class="px-6 flex-1 pb-32"> 
+            <h2 class="text-lg font-medium text-black mb-4">Rekomendasi</h2>
 
             <div class="space-y-4">
                 @foreach($rekomendasi as $job)
@@ -65,6 +67,7 @@
         </div>
 
         <div class="fixed bottom-0 w-full max-w-[420px] bg-[#EBEBEB] border-t border-gray-300 rounded-t-[30px] pb-4 pt-4 px-10 flex justify-between items-center z-50">
+            
             <a href="#" class="flex flex-col items-center justify-center text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
                     <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.47v7.497a.75.75 0 0 1-.75.75H5.596a.75.75 0 0 1-.75-.75V13.753H3.37a.75.75 0 0 1-.53-1.28L11.47 3.84Z" />
@@ -72,7 +75,7 @@
                 </svg>
             </a>
 
-            <a href="#" class="flex flex-col items-center justify-center text-gray-500 hover:text-black transition">
+            <a href="{{ route('profile') }}" class="flex flex-col items-center justify-center text-gray-500 hover:text-black transition">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg>
