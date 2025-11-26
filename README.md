@@ -1,1 +1,8 @@
-a. Nama Aplikasi = Pencarian Magang b. Deskripsi Aplikasi = Pencarian Magang adalah proses pencrian magang yang dilakukan oleh mahasiswa yang direkomendasikan magang sesuai jurusan sekaligus pencarian dosen pembimbing dan update akitvitas magang yang sudah di lakukan c. Kelas-NIM-Nama-Username github = RKC-202210370311101-Mochamad Agung Setiawan-agungqrtz, RK-C-202210370311139-Prima Septian Yudantra-primaseptiiian, RK-C-202210370311214-Almas'Udi-Almasudii d. Link Figma = https://www.figma.com/design/tuuyUtUAXaVGmyHkSSnYTO/Rekayasa-intraksi?node-id=0-1&t=Elld27EqoLX50OGZ-1 e. Worksheet = f. Low Fidelity Prototype = g. Tabel pembagian tugas (backlog) tiap anggota secara bergantian dengan level
+a. Nama Aplikasi = Pencarian Magang b. Deskripsi Aplikasi = Pencarian Magang adalah proses pencrian magang yang dilakukan oleh mahasiswa yang direkomendasikan magang sesuai jurusan sekaligus pencarian dosen pembimbing dan update akitvitas magang yang sudah di lakukan c. 
+| Kelas | NIM              | Nama                       | Username GitHub                              |
+|-------|------------------|----------------------------|-----------------------------------------------|
+| RK-C  | 202210370311101  | Mochamad Agung Setiawan    | [agungqrtz](https://github.com/agungqrtz)     |
+| RK-C  | 202210370311139  | Prima Septian Yudantra     | [primaseptiiian](https://github.com/primaseptiiian) |
+| RK-C  | 202210370311214  | Almas'Udi                  | [Almasudii](https://github.com/Almasudii)     |
+
+d. Link Figma = https://www.figma.com/design/tuuyUtUAXaVGmyHkSSnYTO/Rekayasa-intraksi?node-id=0-1&t=Elld27EqoLX50OGZ-1 e. Worksheet = f. Low Fidelity Prototype = g. Tabel pembagian tugas (backlog) tiap anggota secara bergantian dengan level
