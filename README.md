@@ -5,7 +5,8 @@ a. Nama Aplikasi = Pencarian Magang b. Deskripsi Aplikasi = Pencarian Magang ada
 | RK-C  | 202210370311139  | Prima Septian Yudantra     | [primaseptiiian](https://github.com/primaseptiiian) |
 | RK-C  | 202210370311214  | Almas'Udi                  | [Almasudii](https://github.com/Almasudii)     |
 
-d. Link Figma = https://www.figma.com/design/tuuyUtUAXaVGmyHkSSnYTO/Rekayasa-intraksi?node-id=0-1&t=Elld27EqoLX50OGZ-1 e. Worksheet = f. Low Fidelity Prototype = g. Tabel pembagian tugas (backlog) tiap anggota secara bergantian dengan level
+d. Link Figma = https://www.figma.com/design/tuuyUtUAXaVGmyHkSSnYTO/Rekayasa-intraksi?node-id=0-1&t=Elld27EqoLX50OGZ-1 e. Worksheet = https://drive.google.com/file/d/1gc4OIK59Qv8GX9VqGaQQcEk0sB4MKJzA/view?usp=drive_link f. Low Fidelity Prototype = 
+g. Tabel pembagian tugas (backlog) tiap anggota secara bergantian dengan level
 | #  | Fitur / Task               | PIC                         | Level   | Keterangan Singkat                                  |
 |----|----------------------------|-----------------------------|---------|-----------------------------------------------------|
 | 1  | Beranda                    | Mochamad Agung Setiawan     | Medium  | Tampilan utama + navigasi menu                      |
