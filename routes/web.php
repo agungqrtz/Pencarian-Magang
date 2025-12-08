@@ -4,25 +4,24 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\DosenController;
 
-// Route default: Mengarahkan halaman utama ('/') langsung ke Beranda
+// Route default: Redirect "/" ke "/beranda"
 Route::get('/', function () {
     return redirect()->route('beranda');
 });
 
-// Route untuk halaman Beranda (Daftar Lowongan)
+// Halaman Beranda (Daftar Lowongan)
 Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
 
-// Route untuk halaman Detail Lowongan (Menerima parameter ID)
+// Halaman Detail Lowongan
 Route::get('/detail-lowongan/{id}', [BerandaController::class, 'show'])->name('detail-lowongan');
 
-// Route untuk halaman Profile
+// Halaman Profile
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
-// Route untuk halaman Pengaturan
+// Halaman Pengaturan
 Route::get('/pengaturan', [SettingsController::class, 'index'])->name('pengaturan');
 
-// Route untuk halaman Dosen / Booking Bimbingan
-Route::get('/dosen', function () {
-    return view('dosen');
-})->name('dosen');
+// Tambahan dari versi GitHub (jika ada)
+Route::get('/dosen', [DosenController::class, 'index'])->name('dosen');

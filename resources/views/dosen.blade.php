@@ -65,10 +65,6 @@
 
         </div>
 
-
-        <!-- ========================================= -->
-        <!-- 🔥 BOTTOM NAVBAR — SESUAI CODE KAMU 🔥 -->
-        <!-- ========================================= -->
         <div class="fixed bottom-0 w-full max-w-[420px] bg-[#EBEBEB] border-t border-gray-300 rounded-t-[30px] pb-4 pt-4 px-10 
                     flex justify-between items-center z-50 left-1/2 -translate-x-1/2">
 
