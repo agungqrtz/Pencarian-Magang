@@ -20,4 +20,4 @@ Route::get('/detail-lowongan/{id}', [BerandaController::class, 'show'])->name('d
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 // Route untuk halaman Pengaturan
-Route::get('/pengaturan', [SettingsController::class, 'index'])->name('pengaturan');
+Route::get('/pengaturan', [SettingsController::class, 'index'])->name('pengaturan'); //test
