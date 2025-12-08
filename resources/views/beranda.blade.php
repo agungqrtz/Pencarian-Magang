@@ -11,6 +11,7 @@
 
     <div class="w-full max-w-[420px] bg-[#FDFDFC] h-full min-h-screen relative shadow-2xl flex flex-col">
         
+        <!-- Header -->
         <div class="pt-12 px-6 pb-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-black tracking-tight">Beranda</h1>
             
@@ -21,6 +22,7 @@
             </button>
         </div>
 
+        <!-- Search -->
         <div class="px-6 mb-6">
             <div class="relative">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -29,22 +31,25 @@
                     </svg>
                 </div>
                 <input type="text" 
-                    class="block w-full pl-10 pr-3 py-3 border border-black rounded-full leading-5 bg-[#EBEBEB] placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-0 transition duration-150 ease-in-out sm:text-sm" 
+                    class="block w-full pl-10 pr-3 py-3 border border-black rounded-full leading-5 bg-[#EBEBEB] placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-0 transition sm:text-sm" 
                     placeholder="Cari..." disabled> 
             </div>
         </div>
 
+        <!-- Rekomendasi -->
         <div class="px-6 flex-1 pb-32"> 
             <h2 class="text-lg font-medium text-black mb-4">Rekomendasi</h2>
 
             <div class="space-y-4">
                 @foreach($rekomendasi as $job)
-                {{-- UBAH DIV JADI A (LINK) AGAR BISA DIKLIK --}}
-                <a href="{{ route('detail-lowongan', ['id' => $job['id']]) }}" class="block bg-[#D9D9D9] rounded-xl p-4 flex items-center gap-4 shadow-sm hover:bg-gray-300 transition cursor-pointer">
+                <a href="{{ route('detail-lowongan', ['id' => $job['id']]) }}" 
+                    class="block bg-[#D9D9D9] rounded-xl p-4 flex items-center gap-4 shadow-sm hover:bg-gray-300 transition cursor-pointer">
+                    
                     <div class="flex-shrink-0">
                         <div class="w-10 h-10 flex items-center justify-center relative">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z" fill="#6B4FBB" stroke="#6B4FBB" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z" 
+                                      fill="#6B4FBB" stroke="#6B4FBB" stroke-width="2" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </div>
@@ -57,16 +62,23 @@
                 @endforeach
             </div>
 
+            <!-- Tombol Dashboard & Booking -->
             <div class="mt-6 flex gap-3">
+
                 <button class="flex-1 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-2 rounded-lg shadow hover:bg-blue-600 transition">
                     Dashboard Magang
                 </button>
-                <button class="flex-1 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-2 rounded-lg shadow hover:bg-blue-600 transition">
+
+                <!-- INI SUDAH DIGANTI SESUAI PERMINTAAN -->
+                <a href="{{ route('dosen') }}" 
+                    class="flex-1 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-2 rounded-lg shadow hover:bg-blue-600 transition text-center">
                     Booking Bimbingan
-                </button>
+                </a>
+
             </div>
         </div>
 
+        <!-- Bottom Navbar -->
         <div class="fixed bottom-0 w-full max-w-[420px] bg-[#EBEBEB] border-t border-gray-300 rounded-t-[30px] pb-4 pt-4 px-10 flex justify-between items-center z-50">
             
             <a href="#" class="flex flex-col items-center justify-center text-black">

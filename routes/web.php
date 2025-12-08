@@ -21,3 +21,8 @@ Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
 // Route untuk halaman Pengaturan
 Route::get('/pengaturan', [SettingsController::class, 'index'])->name('pengaturan');
+
+// Route untuk halaman Dosen / Booking Bimbingan
+Route::get('/dosen', function () {
+    return view('dosen');
+})->name('dosen');
