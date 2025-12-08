@@ -25,3 +25,4 @@ Route::get('/pengaturan', [SettingsController::class, 'index'])->name('pengatura
 
 // Tambahan dari versi GitHub (jika ada)
 Route::get('/dosen', [DosenController::class, 'index'])->name('dosen');
+
