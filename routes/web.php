@@ -6,6 +6,12 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\NotifikasiController;
+
+// ... route lainnya ...
+
+// Route untuk halaman Notifikasi
+Route::get('/notifikasi', [NotifikasiController::class, 'index'])->name('notifikasi');
 
 /*
 |--------------------------------------------------------------------------
