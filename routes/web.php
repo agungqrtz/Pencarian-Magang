@@ -14,6 +14,7 @@ Route::get('/', function () {
 Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/detail-lowongan/{id}', [BerandaController::class, 'show'])->name('detail-lowongan');
 
+
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/pengaturan', [SettingsController::class, 'index'])->name('pengaturan');
 

@@ -52,7 +52,7 @@
 
     </div>
 
-    <!-- ===== NAVBAR BAWAH ===== -->
+    <!--  NAVBAR BAWAH -->
     <div class="fixed bottom-0 w-full max-w-[420px] bg-[#EBEBEB] border-t border-gray-300
                 rounded-t-[30px] py-4 px-10 flex justify-between items-center">
 
