@@ -10,10 +10,10 @@
 <body class="bg-gray-100 font-sans antialiased flex justify-center min-h-screen">
 
     <div class="w-full max-w-[420px] bg-[#FDFDFC] h-full min-h-screen relative shadow-2xl flex flex-col">
-        
+
         <div class="pt-12 px-6 pb-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-black tracking-tight">Beranda</h1>
-            
+
             <a href="{{ route('notifikasi') }}" class="p-2 rounded-full hover:bg-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
@@ -28,29 +28,29 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </div>
-                <input type="text" 
-                    class="block w-full pl-10 pr-3 py-3 border border-black rounded-full leading-5 bg-[#EBEBEB] placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-0 transition sm:text-sm" 
-                    placeholder="Cari..." disabled> 
+                <input type="text"
+                    class="block w-full pl-10 pr-3 py-3 border border-black rounded-full leading-5 bg-[#EBEBEB] placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-0 transition sm:text-sm"
+                    placeholder="Cari..." disabled>
             </div>
         </div>
 
-        <div class="px-6 flex-1 pb-32"> 
+        <div class="px-6 flex-1 pb-32">
             <h2 class="text-lg font-medium text-black mb-4">Rekomendasi</h2>
 
             <div class="space-y-4">
                 @foreach($rekomendasi as $job)
-                <a href="{{ route('detail-lowongan', ['id' => $job['id']]) }}" 
+                <a href="{{ route('detail-lowongan', ['id' => $job['id']]) }}"
                     class="block bg-[#D9D9D9] rounded-xl p-4 flex items-center gap-4 shadow-sm hover:bg-gray-300 transition cursor-pointer">
-                    
+
                     <div class="flex-shrink-0">
                         <div class="w-10 h-10 flex items-center justify-center relative">
                             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z" 
+                                <path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z"
                                       fill="#6B4FBB" stroke="#6B4FBB" stroke-width="2" stroke-linejoin="round"/>
                             </svg>
                         </div>
                     </div>
-                    
+
                     <div>
                         <h3 class="text-base font-bold text-black">{{ $job['title'] }}</h3>
                         <p class="text-xs text-gray-700">{{ $job['company'] }}</p>
@@ -60,11 +60,13 @@
             </div>
 
             <div class="mt-6 flex gap-3">
-                <button class="flex-1 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-2 rounded-lg shadow hover:bg-blue-600 transition">
-                    Dashboard Magang
-                </button>
+<a href="{{ route('dashboard.magang') }}"
+   class="flex-1 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-2 rounded-lg shadow hover:bg-blue-600 transition text-center block">
+    Dashboard Magang
+</a>
 
-                <a href="{{ route('dosen') }}" 
+
+                <a href="{{ route('dosen') }}"
                     class="flex-1 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-2 rounded-lg shadow hover:bg-blue-600 transition text-center">
                     Booking Bimbingan
                 </a>
@@ -72,7 +74,7 @@
         </div>
 
         <div class="fixed bottom-0 w-full max-w-[420px] bg-[#EBEBEB] border-t border-gray-300 rounded-t-[30px] pb-4 pt-4 px-10 flex justify-between items-center z-50">
-            
+
             <a href="#" class="flex flex-col items-center justify-center text-black">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
                     <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.632 8.632a.75.75 0 0 1-.53 1.28h-1.47v7.497a.75.75 0 0 1-.75.75H5.596a.75.75 0 0 1-.75-.75V13.753H3.37a.75.75 0 0 1-.53-1.28L11.47 3.84Z" />

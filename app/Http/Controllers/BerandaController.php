@@ -66,7 +66,12 @@ class BerandaController extends Controller
     // Menampilkan Halaman Beranda
     public function index()
     {
+         $rekomendasi = [
+            ['id' => 1, 'title' => 'Magang Backend Laravel', 'company' => 'PT Maju Jaya'],
+            ['id' => 2, 'title' => 'Magang UI/UX', 'company' => 'Startup Keren'],
+        ];
         return view('beranda', ['rekomendasi' => $this->jobs]);
+
     }
 
     // Menampilkan Halaman Detail Lowongan berdasarkan ID
@@ -74,7 +79,8 @@ class BerandaController extends Controller
     {
         // Cari data berdasarkan ID, jika tidak ada tampilkan 404 atau default
         $job = $this->jobs[$id] ?? abort(404, 'Lowongan tidak ditemukan');
-        
+
         return view('detail-lowongan', compact('job'));
     }
+
 }
