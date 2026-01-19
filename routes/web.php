@@ -33,6 +33,9 @@ Route::get('/', function () {
 Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/detail-lowongan/{id}', [BerandaController::class, 'show'])->name('detail-lowongan');
 
+Route::get('/apply/berhasil', function () {
+    return view('apply-berhasil');
+})->name('apply.berhasil');
 /*
 |--------------------------------------------------------------------------
 | PROFILE & SETTINGS

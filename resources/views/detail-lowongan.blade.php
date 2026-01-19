@@ -56,9 +56,9 @@
                     <p class="text-[11px] leading-relaxed whitespace-pre-line">{{ $job['duration'] }}</p>
                 </div>
 
-                <button class="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition whitespace-nowrap w-40">
-                    Apply Magang
-                </button>
+                <a href="{{ route('apply.berhasil') }}" class="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-[#2D9CDB] text-white font-bold text-sm py-3 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition whitespace-nowrap w-40 text-center flex items-center justify-center no-underline">
+    Apply Magang
+</a>
             </div>
 
         </div>
